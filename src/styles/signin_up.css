@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'san-serif';
+}
+
+body {
+    /*   background-color: #fff; */
+    width: 100%;
+    height: 90vh;
+    /*     background: url(/public/images/loginbackground.jpg);
+ */
+    /*  background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    position: cen;
+}
+
+.wrapper {
+    top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/public/images/loginbackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+    margin-top: -62px;
+    /*     background: rgba(39,39,39,0.404);
+ */
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#registerBtn {
+    margin-left: 15px;
+}
+
+.btn.white-btn {
+    background: rgba(16, 16, 16, 0.6);
+}
+
+.btn.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+.form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 311px;
+}
+
+.login-container {
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.top span {
+    color: black;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a {
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.two-forms {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgba(29, 28, 28, 0.2);
+    color: #121111;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s;
+    margin-bottom: 20px;
+}
+
+.input-field:hover,
+.input-field:focus {
+    background: rgba(20, 20, 20, 0.25);
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: black;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+}
+
+.two label a {
+    text-decoration: none;
+    color: black;
+}
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:540px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+    .form-box {
+        width: 100%;
+        height: 500px;
+    }
+    .register-container,
+    .login-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container,
+    .two-forms {
+        flex-direction: column;
+    }
+}
+
+
+/* Extra Small Devices (portrait phones) */
+
+@media only screen and (max-width: 576px) {
+    .flex {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Small Devices (landscape phones) */
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .flex {
+        padding: 0 15px;
+    }
+}
+
+
+/* Medium Devices (tablets) */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .flex {
+        padding: 0 30px;
+    }
+}
+
+
+/* Large Devices (small laptops and tablets) */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+/* Extra Large Devices (laptops and desktops) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .flex {
+        padding: 0 50px;
+    }
+}

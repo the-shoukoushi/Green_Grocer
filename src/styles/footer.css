@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #74c95e;
+    padding: 1px 0;
+    padding-bottom: 40px;
+    position: sticky;
+    z-index: 4;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #055b29cb;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footerBottom {
+    background-color: rgb(213, 213, 213);
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.fa-solid {
+    color: rgb(0, 0, 0);
+}
+
+.footerBottom p {
+    color: rgb(2, 6, 0);
+}
+
+
+/* animation to the footer text */
+
+.footerBottom p {
+    position: relative;
+    animation: slidein 10s infinite;
+}
+
+.fa-beat-fade {
+    color: rgb(30, 255, 0);
+    /* Replace 'red' with the desired color */
+}
+
+
+/* Define the animation keyframes */
+
+@keyframes slidein {
+    from {
+        left: 100%;
+        /* Start off-screen */
+    }
+    to {
+        left: 0;
+        /* Slide to the original position */
+    }
+}
+
+
+/* Additional styling for the copyright icon */
+
+.footerBottom .fa-solid {
+    margin-right: 5px;
+    color: rgb(29, 69, 18);
+}
+
+.designer {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0px 5px;
+}
+
+
+/*responsive*/
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+  /* Extra Small Devices (portrait phones) */
+  @media only screen and (max-width: 576px) {
+    .flex {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Small Devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .flex {
+        padding: 0 15px;
+    }
+}
+
+/* Medium Devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .flex {
+        padding: 0 30px;
+    }
+}
+
+/* Large Devices (small laptops and tablets) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra Large Devices (laptops and desktops) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .flex {
+        padding: 0 50px;
+    }
+}

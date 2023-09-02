@@ -1,0 +1,143 @@
+/* Styles for the main container */
+
+#cityInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+    background-color: darkgreen;
+}
+
+.item {
+    display: inline-block;
+    width: 18%;
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item img {
+    height: 150px;
+}
+
+.item h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.item .price {
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+    margin-bottom: 5px;
+}
+
+.item .quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.item label {
+    margin-right: 5px;
+}
+
+.item select {
+    width: 25%;
+    padding: 5px;
+}
+
+.item button.add-to-cart {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.item button.add-to-cart:hover {
+    background-color: darkgreen;
+}
+
+
+/* Extra Small Devices (portrait phones) */
+
+@media only screen and (max-width: 576px) {
+    .flex {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Small Devices (landscape phones) */
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .flex {
+        padding: 0 15px;
+    }
+}
+
+
+/* Medium Devices (tablets) */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .flex {
+        padding: 0 30px;
+    }
+}
+
+
+/* Large Devices (small laptops and tablets) */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+/* Extra Large Devices (laptops and desktops) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .flex {
+        padding: 0 50px;
+    }
+}
